@@ -52,9 +52,9 @@ void exercise_1(string s1, string s2, string s3) {
         if( line1_length <= 30 && line2_length <= 30 && line3_length <= 30 ){
             minimum_line = s1;
             if (s2 < minimum_line) {
-            minimum_line = line2;
+            minimum_line = s2;
             }else if (s3 < minimum_line) {
-            minimum_line = line3;
+            minimum_line = s3;
             }
             cout << minimum_line;
         }else {
@@ -96,9 +96,9 @@ void exercise_3(int a, int b) {
     
     if (b != 0){
         unsigned long int division = a/b;
-        cout << division;
+        return division;
     }else{ 
-    cout << "Impossible";
+    return "Impossible";
     }
     return 0;
 }

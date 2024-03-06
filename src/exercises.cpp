@@ -8,40 +8,40 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // Online C++ compiler to run C++ program online
-  
+
     // Definiendo Variables
-    string line1;
-    string line2;
-    string line3;
+    string s1;
+    string s2;
+    string s3;
     string minimum_line;
     int i = 1;
     bool lower_case = true;
     
     //Obteniendo valor de las variables
-    getline(cin, line1);
-    getline(cin, line2);
-    getline(cin, line3);
+    getline(cin, s1);
+    getline(cin, s2);
+    getline(cin, s3);
     
     // Getting the length of each variable
-    size_t line1_length = line1.length();
-    size_t line2_length = line2.length();
-    size_t line3_length = line3.length();
+    size_t line1_length = s1.length();
+    size_t line2_length = s2.length();
+    size_t line3_length = s3.length();
     
-    for (char character1 : line1) {
+    for (char character1 : s1) {
         if (!std::islower(character1)) {
             lower_case = false;
             break;  
         }
     }
 
-    for (char character2 : line2) {
+    for (char character2 : s2) {
         if (!std::islower(character2)) {
             lower_case = false;
             break;  
         }
     }
 
-    for (char character3 : line3) {
+    for (char character3 : s3) {
         if (!std::islower(character3)) {
             lower_case = false;
             break;  
@@ -50,10 +50,10 @@ void exercise_1(string s1, string s2, string s3) {
 
     if (lower_case) {
         if( line1_length <= 30 && line2_length <= 30 && line3_length <= 30 ){
-            minimum_line = line1;
-            if (line2 < minimum_line) {
+            minimum_line = s1;
+            if (s2 < minimum_line) {
             minimum_line = line2;
-            }else if (line3 < minimum_line) {
+            }else if (s3 < minimum_line) {
             minimum_line = line3;
             }
             cout << minimum_line;

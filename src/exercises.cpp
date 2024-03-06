@@ -10,9 +10,6 @@ void exercise_1(string s1, string s2, string s3) {
   // Online C++ compiler to run C++ program online
 
     // Definiendo Variables
-    string s1;
-    string s2;
-    string s3;
     string minimum_line;
     int i = 1;
     bool lower_case = true;

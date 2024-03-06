@@ -15,9 +15,6 @@ void exercise_1(string s1, string s2, string s3) {
     bool lower_case = true;
     
     //Obteniendo valor de las variables
-    getline(cin, s1);
-    getline(cin, s2);
-    getline(cin, s3);
     
     // Getting the length of each variable
     size_t line1_length = s1.length();

@@ -92,8 +92,15 @@ void exercise_2(double A, double B, double C) {
     return 0;// TODO: YOUR CODE HERE
 }
 
-void exercise_3(int a, int b) {
-  // TODO: YOUR CODE HERE
+void exercise_3(int a, int b) {  
+    
+    if (b != 0){
+        unsigned long int division = a/b;
+        cout << division;
+    }else{ 
+    cout << "Impossible";
+    }
+    return 0;
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {

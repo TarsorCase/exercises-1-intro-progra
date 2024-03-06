@@ -1,11 +1,70 @@
 
 #include <cmath>
 #include <iostream>
+#include <string>
+#include <cctype>
 
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
-  // TODO: YOUR CODE HERE
+  // Online C++ compiler to run C++ program online
+  
+    // Definiendo Variables
+    string line1;
+    string line2;
+    string line3;
+    string minimum_line;
+    int i = 1;
+    bool lower_case = true;
+    
+    //Obteniendo valor de las variables
+    getline(cin, line1);
+    getline(cin, line2);
+    getline(cin, line3);
+    
+    // Getting the length of each variable
+    size_t line1_length = line1.length();
+    size_t line2_length = line2.length();
+    size_t line3_length = line3.length();
+    
+    for (char character1 : line1) {
+        if (!std::islower(character1)) {
+            lower_case = false;
+            break;  
+        }
+    }
+
+    for (char character2 : line2) {
+        if (!std::islower(character2)) {
+            lower_case = false;
+            break;  
+        }
+    }
+
+    for (char character3 : line3) {
+        if (!std::islower(character3)) {
+            lower_case = false;
+            break;  
+        }
+    }
+
+    if (lower_case) {
+        if( line1_length <= 30 && line2_length <= 30 && line3_length <= 30 ){
+            minimum_line = line1;
+            if (line2 < minimum_line) {
+            minimum_line = line2;
+            }else if (line3 < minimum_line) {
+            minimum_line = line3;
+            }
+            cout << minimum_line;
+        }else {
+        cout << "Una de las oraciones o palabras excede los 30 caracteres permitidos";
+        }
+    }else {
+        cout << "No todos los caracteres son minúsculas." << endl;
+    }
+    
+    return 0;
 }
 
 void exercise_2(double A, double B, double C) {

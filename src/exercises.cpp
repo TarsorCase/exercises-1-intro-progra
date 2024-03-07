@@ -55,7 +55,7 @@ void exercise_1(string s1, string s2, string s3) {
         cout << "Una de las oraciones o palabras excede los 30 caracteres permitidos";
         }
     }else {
-        cout << "No todos los caracteres son minúsculas." << endl;
+        cout << "No todos los caracteres son minusculas." << endl;
     }
 }
 

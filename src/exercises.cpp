@@ -57,18 +57,9 @@ void exercise_1(string s1, string s2, string s3) {
     }else {
         cout << "No todos los caracteres son minúsculas." << endl;
     }
-    
-    return 0;
 }
 
 void exercise_2(double A, double B, double C) {
-    double A;    
-    double B;
-    double C;
-    
-    A = 0.0;
-    B = 5.0;
-    C = 4.0;
     
     double discriminant = B * B - 4 * A * C;
 
@@ -83,16 +74,16 @@ void exercise_2(double A, double B, double C) {
     } else {
         
     }
-    return 0;// TODO: YOUR CODE HERE
+    return 0;
 }
 
 void exercise_3(int a, int b) {  
     
     if (b != 0){
         unsigned long int division = a/b;
-        return division;
+        cout << "division";
     }else{ 
-    return "Impossible";
+    cout << "Impossible";
     }
     return 0;
 }

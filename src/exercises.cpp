@@ -80,9 +80,9 @@ void exercise_3(int a, int b) {
     
     if (b != 0){
         unsigned long int division = a/b;
-        cout << "division";
+        cout << division;
     }else{ 
-    cout << "Impossible";
+    cout << "Impossible\n";
     }
 }
 

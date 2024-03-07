@@ -74,7 +74,6 @@ void exercise_2(double A, double B, double C) {
     } else {
         
     }
-    return 0;
 }
 
 void exercise_3(int a, int b) {  
@@ -85,7 +84,6 @@ void exercise_3(int a, int b) {
     }else{ 
     cout << "Impossible";
     }
-    return 0;
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {

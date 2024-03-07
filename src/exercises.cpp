@@ -52,10 +52,10 @@ void exercise_1(string s1, string s2, string s3) {
             }
             cout << minimum_line;
         }else {
-        
+        cout << "!";
         }
     }else {
-        
+        cout << "!";
     }
 }
 

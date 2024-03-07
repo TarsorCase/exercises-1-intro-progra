@@ -94,10 +94,10 @@ void exercise_4(double n, double a, double b, double x, double y) {
         cout << n;        
     }else if (n >= a && n < b){
         float descuento_pequeño = n - (n * descuento_1);
-        cout << descuento_pequeño;
+        cout << descuento_pequeño << "\n";
     }else {
         float descuento_grande = n - (n * descuento_2);
-        cout << descuento_grande;
+        cout << descuento_grande << "\n";
     }
 }
 

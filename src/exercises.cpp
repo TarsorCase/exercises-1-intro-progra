@@ -102,7 +102,18 @@ void exercise_4(double n, double a, double b, double x, double y) {
 }
 
 void exercise_5(char character) {
-  // TODO: YOUR CODE HERE
+  bool lower_case = true;
+
+  for (char character1 : character) {
+        if (!std::islower(character1)) {
+            lower_case = false;
+            break;  
+        }
+    }
+  if (lower_case == false){
+    cout << "upper-case alphabet\n";
+  }else if
+
 }
 
 void exercise_6(int number) {

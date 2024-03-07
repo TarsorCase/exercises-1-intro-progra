@@ -67,7 +67,7 @@ void exercise_2(double A, double B, double C) {
     if (discriminant > 0) {
         double x1 = (-B + sqrt(discriminant)) / (2 * A);
         double x2 = (-B - sqrt(discriminant)) / (2 * A);
-        cout << x1 << " " << x2;
+        cout << x1 << " " << x2 << "\n";
     } else if (discriminant == 0) {
         double x = -B / (2 * A);
         cout << x ;
@@ -87,7 +87,18 @@ void exercise_3(int a, int b) {
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
-  // TODO: YOUR CODE HERE
+  float descuento_1 = x / 100;
+    float descuento_2 = y / 100;
+    
+    if (n < a){
+        cout << n;        
+    }else if (n >= a && n < b){
+        float descuento_pequeño = n - (n * descuento_1);
+        cout << descuento_pequeño;
+    }else {
+        float descuento_grande = n - (n * descuento_2);
+        cout << descuento_grande;
+    }
 }
 
 void exercise_5(char character) {

@@ -168,7 +168,13 @@ void exercise_6(int number) {
 }
 
 void exercise_7(double r) {
-  // TODO: YOUR CODE HERE
+   if (r < 0){
+       cout << "Error: Radius cannot be negative.\n";
+   }else {
+        double power = pow(r, 2);
+        double area = 4 * M_PI * power;
+        cout << area;
+   }
 }
 
 void exercise_8(long int seconds) {

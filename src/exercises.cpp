@@ -61,18 +61,39 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
     
-    double discriminant = B * B - 4 * A * C;
-
-    
-    if (discriminant > 0) {
-        double x1 = (-B + sqrt(discriminant)) / (2 * A);
-        double x2 = (-B - sqrt(discriminant)) / (2 * A);
-        cout << x1 << " " << x2 << "\n";
-    } else if (discriminant == 0) {
-        double x = -B / (2 * A);
-        cout << x ;
+    if (A == 0) {
+        // La ecuación no es cuadrática
+        if (B != 0) {
+            // La ecuación es lineal
+            double raiz = -C / B;
+            std::cout << raiz << std::endl;
+        } else {
+            // La ecuación es degenerada (0x + 0 = C)
+            if (C == 0) {
+                // Infinitas soluciones
+                std::cout << "Infinitas soluciones" << std::endl;
+            } else {
+                // No hay solución
+                std::cout << "No hay solucion" << std::endl;
+            }
+        }
     } else {
-        
+        // Calcular el discriminante
+        double discriminante = B * B - 4 * A * C;
+
+        if (discriminante > 0) {
+            // Dos raíces reales distintas
+            double raiz1 = (-B + sqrt(discriminante)) / (2 * A);
+            double raiz2 = (-B - sqrt(discriminante)) / (2 * A);
+            std::cout << raiz1 << " " << raiz2 << std::endl;
+        } else if (discriminante == 0) {
+            // Una raíz real (doble)
+            double raiz = -B / (2 * A);
+            std::cout << raiz << std::endl;
+        } else {
+            // Raíces complejas (ignoradas)
+            
+        }
     }
 }
 

@@ -117,7 +117,34 @@ void exercise_5(char character) {
 }
 
 void exercise_6(int number) {
-  // TODO: YOUR CODE HERE
+   switch (number) {
+        
+    case 1:
+        cout << "Lunes\n";
+        break;
+    case 2:
+        cout << "Martes\n";
+        break;
+    case 3:
+        cout << "Miercoles\n";
+        break;
+    case 4:
+        cout << "Jueves\n";
+        break;
+    case 5:
+        cout << "Viernes\n";
+        break;
+    case 6:
+        cout << "Sabado";
+        break;
+    case 7:
+        cout << "Domingo\n";
+        break;
+    default:
+        cout << "Invalid input\n";
+        break;
+    
+}
 }
 
 void exercise_7(double r) {

@@ -238,13 +238,13 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
     char ch3 = s3[0];
     char ch4 = s4[0];
     char ch5 = s5[0];
-    cout << ch1 << ch2 << ch3 << ch4 << ch5;
+    cout << ch1 << ch2 << ch3 << ch4 << ch5 << "\n";
     if(ch1 == ch5){
-        cout << "Hemos encontrado algo!";
+        return "Hemos encontrado algo!";
     }else {
-        cout << "Aun sin suerte";
+        return "Aun sin suerte";
     }
-  return "";
+  
 }
 
 int exercise_10(int a, int b) {

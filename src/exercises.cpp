@@ -110,7 +110,7 @@ void exercise_5(char character) {
     }else if(character_ascii > 90 && character_ascii<=96){
         cout << "not an alphabet\n";
     }else if(character_ascii > 96 && character_ascii<=122){
-        cout << "upper-case alphabet\n";
+        cout << "lower-case alphabet\n";
     }else if(character_ascii > 122 && character_ascii<=126){
         cout << "not an alphabet\n";
     }

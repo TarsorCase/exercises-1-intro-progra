@@ -182,7 +182,7 @@ void exercise_8(long int seconds) {
     
     int hours;
     int minutes;
-    
+    int seconds_if = seconds;
     int totalSeconds = seconds;
 
     hours = totalSeconds / 3600;
@@ -195,9 +195,9 @@ void exercise_8(long int seconds) {
 
     
     seconds = remainingSeconds % 60;
-    if( seconds < 0){
+    if( seconds_if < 0){
         cout << "Error: Input seconds cannot be negative.\n";
-    }else if( seconds > 0){
+    }else if( seconds_if > 0){
         if(hours < 10 && minutes < 10 && seconds < 10){
             string hour_value = "0"s + to_string(hours);
             string minute_value = "0"s + to_string(minutes);

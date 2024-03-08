@@ -195,34 +195,36 @@ void exercise_8(long int seconds) {
 
     
     seconds = remainingSeconds % 60;
-    
-    if(hours < 10 && minutes < 10 && seconds < 10){
-        string hour_value = "0"s + to_string(hours);
-        string minute_value = "0"s + to_string(minutes);
-        string second_value = "0"s + to_string(seconds);
-        cout << hour_value << ":" << minute_value << ":" << second_value << "\n";
-    }else if(hours > 10 && minutes < 10 && seconds < 10){
-        string hour_value = "0"s + to_string(hours);
-        string minute_value = "0"s + to_string(minutes);
-        string second_value = "0"s + to_string(seconds);
-        cout << hours << ":" << minute_value << ":" << second_value << "\n";
-    }else if(hours > 10 && minutes > 10 && seconds < 10){
-        string hour_value = "0"s + to_string(hours);
-        string minute_value = "0"s + to_string(minutes);
-        string second_value = "0"s + to_string(seconds);
-        cout << hours << ":" << minutes << ":" << second_value << "\n";
-    }else if(hours > 10 && minutes > 10 && seconds > 10){
-        string hour_value = "0"s + to_string(hours);
-        string minute_value = "0"s + to_string(minutes);
-        string second_value = "0"s + to_string(seconds);
-        cout << hours << ":" << minutes << ":" << seconds << "\n";
-    }else if(hours < 10 && minutes < 10 && seconds > 10){
-        string hour_value = "0"s + to_string(hours);
-        string minute_value = "0"s + to_string(minutes);
-        string second_value = "0"s + to_string(seconds);
-        cout << hour_value << ":" << minute_value << ":" << seconds << "\n";
+    if( seconds < 0){
+        cout << "Error: Input seconds cannot be negative.\n";
+    }else if( seconds > 0){
+        if(hours < 10 && minutes < 10 && seconds < 10){
+            string hour_value = "0"s + to_string(hours);
+            string minute_value = "0"s + to_string(minutes);
+            string second_value = "0"s + to_string(seconds);
+            cout << hour_value << ":" << minute_value << ":" << second_value << "\n";
+        }else if(hours > 10 && minutes < 10 && seconds < 10){
+            string hour_value = "0"s + to_string(hours);
+            string minute_value = "0"s + to_string(minutes);
+            string second_value = "0"s + to_string(seconds);
+            cout << hours << ":" << minute_value << ":" << second_value << "\n";
+        }else if(hours > 10 && minutes > 10 && seconds < 10){
+            string hour_value = "0"s + to_string(hours);
+            string minute_value = "0"s + to_string(minutes);
+            string second_value = "0"s + to_string(seconds);
+            cout << hours << ":" << minutes << ":" << second_value << "\n";
+        }else if(hours > 10 && minutes > 10 && seconds > 10){
+            string hour_value = "0"s + to_string(hours);
+            string minute_value = "0"s + to_string(minutes);
+            string second_value = "0"s + to_string(seconds);
+            cout << hours << ":" << minutes << ":" << seconds << "\n";
+        }else if(hours < 10 && minutes < 10 && seconds > 10){
+            string hour_value = "0"s + to_string(hours);
+            string minute_value = "0"s + to_string(minutes);
+            string second_value = "0"s + to_string(seconds);
+            cout << hour_value << ":" << minute_value << ":" << seconds << "\n";
+        }
     }
-    
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {

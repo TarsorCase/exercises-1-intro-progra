@@ -179,7 +179,50 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
-  // TODO: YOUR CODE HERE
+  
+    int totalSeconds = 3870;
+    int hours;
+    int minutes;
+    int seconds;
+    
+    hours = totalSeconds / 3600;
+
+    
+    int remainingSeconds = totalSeconds % 3600;
+
+    
+    minutes = remainingSeconds / 60;
+
+    
+    seconds = remainingSeconds % 60;
+    
+    if(hours < 10 && minutes < 10 && seconds < 10){
+        string hour_value = "0"s + to_string(hours);
+        string minute_value = "0"s + to_string(minutes);
+        string second_value = "0"s + to_string(seconds);
+        cout << hour_value << ":" << minute_value << ":" << second_value;
+    }else if(hours > 10 && minutes < 10 && seconds < 10){
+        string hour_value = "0"s + to_string(hours);
+        string minute_value = "0"s + to_string(minutes);
+        string second_value = "0"s + to_string(seconds);
+        cout << hours << ":" << minute_value << ":" << second_value;
+    }else if(hours > 10 && minutes > 10 && seconds < 10){
+        string hour_value = "0"s + to_string(hours);
+        string minute_value = "0"s + to_string(minutes);
+        string second_value = "0"s + to_string(seconds);
+        cout << hours << ":" << minutes << ":" << second_value;
+    }else if(hours > 10 && minutes > 10 && seconds > 10){
+        string hour_value = "0"s + to_string(hours);
+        string minute_value = "0"s + to_string(minutes);
+        string second_value = "0"s + to_string(seconds);
+        cout << hours << ":" << minutes << ":" << seconds;
+    }else if(hours < 10 && minutes < 10 && seconds > 10){
+        string hour_value = "0"s + to_string(hours);
+        string minute_value = "0"s + to_string(minutes);
+        string second_value = "0"s + to_string(seconds);
+        cout << hour_value << ":" << minute_value << ":" << seconds;
+    }
+    
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {

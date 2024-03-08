@@ -199,29 +199,29 @@ void exercise_8(long int seconds) {
         cout << "Error: Input seconds cannot be negative.\n";
     }else if( seconds_if > 0){
         if(hours < 10 && minutes < 10 && seconds < 10){
-            string hour_value = "0"s + to_string(hours);
-            string minute_value = "0"s + to_string(minutes);
-            string second_value = "0"s + to_string(seconds);
+            string hour_value = "0" + to_string(hours);
+            string minute_value = "0" + to_string(minutes);
+            string second_value = "0" + to_string(seconds);
             cout << hour_value << ":" << minute_value << ":" << second_value << "\n";
-        }else if(hours > 10 && minutes < 10 && seconds < 10){
-            string hour_value = "0"s + to_string(hours);
-            string minute_value = "0"s + to_string(minutes);
-            string second_value = "0"s + to_string(seconds);
+        }else if(hours >= 10 && minutes < 10 && seconds < 10){
+            string hour_value = "0" + to_string(hours);
+            string minute_value = "0" + to_string(minutes);
+            string second_value = "0" + to_string(seconds);
             cout << hours << ":" << minute_value << ":" << second_value << "\n";
-        }else if(hours > 10 && minutes > 10 && seconds < 10){
-            string hour_value = "0"s + to_string(hours);
-            string minute_value = "0"s + to_string(minutes);
-            string second_value = "0"s + to_string(seconds);
+        }else if(hours >= 10 && minutes >= 10 && seconds < 10){
+            string hour_value = "0" + to_string(hours);
+            string minute_value = "0" + to_string(minutes);
+            string second_value = "0" + to_string(seconds);
             cout << hours << ":" << minutes << ":" << second_value << "\n";
-        }else if(hours > 10 && minutes > 10 && seconds > 10){
-            string hour_value = "0"s + to_string(hours);
-            string minute_value = "0"s + to_string(minutes);
-            string second_value = "0"s + to_string(seconds);
+        }else if(hours >= 10 && minutes >= 10 && seconds >= 10){
+            string hour_value = "0" + to_string(hours);
+            string minute_value = "0" + to_string(minutes);
+            string second_value = "0" + to_string(seconds);
             cout << hours << ":" << minutes << ":" << seconds << "\n";
-        }else if(hours < 10 && minutes < 10 && seconds > 10){
-            string hour_value = "0"s + to_string(hours);
-            string minute_value = "0"s + to_string(minutes);
-            string second_value = "0"s + to_string(seconds);
+        }else if(hours < 10 && minutes < 10 && seconds >= 10){
+            string hour_value = "0" + to_string(hours);
+            string minute_value = "0" + to_string(minutes);
+            string second_value = "0" + to_string(seconds);
             cout << hour_value << ":" << minute_value << ":" << seconds << "\n";
         }
     }

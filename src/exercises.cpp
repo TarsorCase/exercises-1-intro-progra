@@ -173,7 +173,7 @@ void exercise_7(double r) {
    }else {
         double power = pow(r, 2);
         double area = 4 * M_PI * power;
-        cout << area;
+        cout << fixed << setprecision(6) << area << "\n";
    }
 }
 

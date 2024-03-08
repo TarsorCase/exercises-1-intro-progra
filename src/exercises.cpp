@@ -120,31 +120,30 @@ void exercise_6(int number) {
    switch (number) {
         
     case 1:
-        cout << "Lunes\n";
+        cout << "Monday\n";
         break;
     case 2:
-        cout << "Martes\n";
+        cout << "Tuesday\n";
         break;
     case 3:
-        cout << "Miercoles\n";
+        cout << "Wednesday\n";
         break;
     case 4:
-        cout << "Jueves\n";
+        cout << "Thursday\n";
         break;
     case 5:
-        cout << "Viernes\n";
+        cout << "Friday\n";
         break;
     case 6:
-        cout << "Sabado";
+        cout << "Saturday";
         break;
     case 7:
-        cout << "Domingo\n";
+        cout << "Sunday\n";
         break;
     default:
         cout << "Invalid input\n";
         break;
-    
-}
+   }
 }
 
 void exercise_7(double r) {

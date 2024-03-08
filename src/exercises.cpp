@@ -102,18 +102,18 @@ void exercise_4(double n, double a, double b, double x, double y) {
 }
 
 void exercise_5(char character) {
-  bool lower_case = true;
-
-  for (char character1 : character) {
-        if (!std::islower(character1)) {
-            lower_case = false;
-            break;  
-        }
+  int character_ascii = character;
+    if (character_ascii >= 0 && character_ascii<=64){
+        cout << "not an alphabet\n";
+    }else if(character_ascii > 64 && character_ascii<=90){
+        cout << "upper-case alphabet\n";
+    }else if(character_ascii > 90 && character_ascii<=96){
+        cout << "not an alphabet\n";
+    }else if(character_ascii > 96 && character_ascii<=122){
+        cout << "upper-case alphabet\n";
+    }else if(character_ascii > 122 && character_ascii<=126){
+        cout << "not an alphabet\n";
     }
-  if (lower_case == false){
-    cout << "upper-case alphabet\n";
-  }else if
-
 }
 
 void exercise_6(int number) {

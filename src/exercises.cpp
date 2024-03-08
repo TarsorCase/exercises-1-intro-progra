@@ -224,6 +224,11 @@ void exercise_8(long int seconds) {
             string second_value = "0" + to_string(seconds);
             cout << hour_value << ":" << minute_value << ":" << seconds << "\n";
         }
+    }else {
+        string hour_value = "0" + to_string(hours);
+        string minute_value = "0" + to_string(minutes);
+        string second_value = "0" + to_string(seconds);
+        cout << hour_value << ":" << minute_value << ":" << second_value << "\n";
     }
 }
 

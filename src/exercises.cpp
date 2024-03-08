@@ -180,7 +180,7 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   
-    int totalSeconds = 3870;
+    int totalSeconds;
     int hours;
     int minutes;
     

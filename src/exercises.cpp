@@ -183,7 +183,6 @@ void exercise_8(long int seconds) {
     int totalSeconds = 3870;
     int hours;
     int minutes;
-    int seconds;
     
     hours = totalSeconds / 3600;
 

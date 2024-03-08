@@ -74,7 +74,7 @@ void exercise_2(double A, double B, double C) {
                 std::cout << "Infinitas soluciones" << std::endl;
             } else {
                 // No hay solución
-                std::cout << "No hay solucion" << std::endl;
+                
             }
         }
     } else {

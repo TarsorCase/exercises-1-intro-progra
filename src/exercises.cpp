@@ -261,9 +261,17 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   if(number == 11235813){
-    return "Se encontro a Fibonacci\n";
+<<<<<<< HEAD
+    return "Se encontro a Fibonacci";
+=======
+    return "Se encontro a Fibonacci";
+>>>>>>> 97ec5def98fbd84cd25e759eba1efe06899218cf
   }else {
-    return "Esto no es de Fibonacci\n";
+<<<<<<< HEAD
+    return "Esto no es de Fibonacci";
+=======
+    return "Esto no es de Fibonacci";
+>>>>>>> 97ec5def98fbd84cd25e759eba1efe06899218cf
   }
 }
 

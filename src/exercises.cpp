@@ -304,10 +304,13 @@ void exercise_12(string color1, int num_pisos1,
 string exercise_13(int age, int years_of_experience) {
   if (age >= 18){
         if(years_of_experience < 3){
+            cout << "coordinador de proyecto"; 
             return "coordinador de proyecto";
         }else if(years_of_experience >= 3 && years_of_experience < 5){
+            cout << "director de proyecto"; 
             return "director de proyecto";
         }else if(years_of_experience >= 5){
+            cout << "director de proyecto senior"; 
             return "director de proyecto senior";
         }
     }else {

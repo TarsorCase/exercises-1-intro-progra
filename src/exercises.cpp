@@ -302,8 +302,17 @@ void exercise_12(string color1, int num_pisos1,
 }
 
 string exercise_13(int age, int years_of_experience) {
-  // TODO: YOUR CODE HERE
-  return "";
+  if (age >= 18){
+        if(years_of_experience < 3){
+            return "coordinador de proyecto";
+        }else if(years_of_experience >= 3 && years_of_experience < 5){
+            return "director de proyecto";
+        }else if(years_of_experience >= 5){
+            return "director de proyecto senior";
+        }
+    }else {
+        
+    }
 }
 
 string exercise_14(int number_of_docs) {

@@ -338,7 +338,7 @@ void exercise_15(int a, int b, int c) {
     c = b;
     b = t;
     
-    cout << "Los valores despues de la permutacion son: a = " << a << " b = " << b << " y c = " << c << "\n";
+    cout << "Los valores despues de la permutacion son: a = " << a << " b = " << b << " c = " << c << "\n";
 }
 
 void exercise_16(int debut, int fin) {

@@ -248,14 +248,14 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 }
 
 int exercise_10(int a, int b) {
-  int sum_num = a + b;
-    if(a > 0 && b > 0){
-    string size_num_string = to_string(sum_num);
-    int size_num = size_num_string.size();
-    int product = size_num * sum_num;
-    cout << product << "\n";
-    }else {
+   if(a < 0 || b < 0 ){
         cout << "0\n";
+    }else{
+        int sum_num = a + b;
+        string size_num_string = to_string(sum_num);
+        int size_num = size_num_string.size();
+        int product = size_num * sum_num;
+        cout << product << "\n";
     }
 }
 

@@ -249,13 +249,14 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
    if(a < 0 || b < 0 ){
-        cout << "0\n";
+        int cero = 0;
+        return cero;
     }else{
         unsigned long int sum_num = a + b;
         string size_num_string = to_string(sum_num);
         unsigned long int size_num = size_num_string.size();
         unsigned long int product = size_num * sum_num;
-        cout << product << "\n";
+        return product;
     }
 }
 

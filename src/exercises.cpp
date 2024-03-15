@@ -318,9 +318,9 @@ string exercise_14(int number_of_docs) {
         string docs = to_string(number_of_docs) + " documentos encontrados.";
         return docs;
     }else if(number_of_docs == 0){
-        return "No se encontraron documentos.";
+        return "No se encontraron documentos";
     }else {
-        return "Se encontro un documento.";
+        return "Se encontro un documento";
     }
 }
 

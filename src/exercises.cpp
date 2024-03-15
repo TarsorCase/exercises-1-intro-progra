@@ -304,13 +304,13 @@ void exercise_12(string color1, int num_pisos1,
 string exercise_13(int age, int years_of_experience) {
     if (age >= 18){
         if(years_of_experience < 3){
-            return "coordinador de proyecto"; 
+            return "Project coordinator"; 
             
         }else if(years_of_experience >= 3 && years_of_experience < 5){
-            return "director de proyecto"; 
+            return "Project manager"; 
             
         }else if(years_of_experience >= 5){
-            return "director de proyecto senior"; 
+            return "Senior project manager"; 
         }
     }else {
         return 0;
@@ -318,7 +318,7 @@ string exercise_13(int age, int years_of_experience) {
 }
 
 string exercise_14(int number_of_docs) {
-  // TODO: YOUR CODE HERE
+  
   return "";
 }
 

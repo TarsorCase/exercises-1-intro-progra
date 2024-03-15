@@ -302,6 +302,7 @@ void exercise_12(string color1, int num_pisos1,
 }
 
 string exercise_13(int age, int years_of_experience) {
+    if (age >= 18){
         if(years_of_experience < 3){
             return "Project coordinator"; 
             
@@ -311,11 +312,14 @@ string exercise_13(int age, int years_of_experience) {
         }else if(years_of_experience >= 5){
             return "Senior project manager"; 
         }
+    }else {
+        return "Not eligible";
+    }
 }
 
 string exercise_14(int number_of_docs) {
     if (number_of_docs > 1){
-        string docs = to_string(number_of_docs) + " documentos encontrados.";
+        string docs = to_string(number_of_docs) + " documentos encontrados";
         return docs;
     }else if(number_of_docs < 1){
         return "No se encontraron documentos";

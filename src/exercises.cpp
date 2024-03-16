@@ -352,10 +352,10 @@ void exercise_16(int debut, int fin) {
         int contador2 = 0;
         int i = debut;
         while(i < fin){
-             if(i => 7 && i <= 17){
+             if(i > 7 && i < 17){
                 result = result + 2;
                 contador2 = contador2 + 1;
-            }else if(i < 7 || i > 17){
+            }else if(i <= 7 || i >= 17){
                 result = result + 1;
                 contador1 = contador1 + 1;
             }

@@ -361,7 +361,7 @@ void exercise_16(int debut, int fin) {
             }
         ++i;
         }
-        cout << "Has alquilado una bicicleta por \n";
+        cout << "Haz alquilado una bicicleta por\n";
         if(contador2 == 0){
             cout << contador1 << " hora(s) con el tarifario de 1 boliviano(s)\n";
         }else if(contador1 == 0){

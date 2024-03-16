@@ -345,7 +345,7 @@ void exercise_15(int a, int b, int c) {
 void exercise_16(int debut, int fin) {
   if( debut > 24 || fin > 24){
         
-        cout << "Las horas deben estar entre 0 y 24!"; 
+        cout << "Las horas deben estar entre 0 y 24!\n"; 
     }else if(fin > debut){
         int result = 0;
         int contador1 = 0;
@@ -373,7 +373,7 @@ void exercise_16(int debut, int fin) {
             cout << "El monto total a pagar es de " << result << " boliviano(s).\n";
     }else if(fin == debut){
     
-        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!";
+        cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!\n";
     
     }else if(fin < debut) {
         

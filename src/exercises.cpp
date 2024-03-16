@@ -343,7 +343,7 @@ void exercise_15(int a, int b, int c) {
 }
 
 void exercise_16(int debut, int fin) {
-  if( debut > 24 || fin > 24){
+  if( debut < 0 || debut > 24 || fin < 0 || fin > 24){
         
         cout << "Las horas deben estar entre 0 y 24!\n"; 
     }else if(fin > debut){

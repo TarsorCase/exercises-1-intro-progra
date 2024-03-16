@@ -377,6 +377,6 @@ void exercise_16(int debut, int fin) {
     
     }else if(fin < debut) {
         
-        cout << "Que extraño, el inicio del alquiler es después del final...";
+        cout << "Que extraño, el inicio del alquiler es después del final...\n";
     }
 }
